@@ -139,10 +139,3 @@ If you like this project:
 🍴 Fork it
 📢 Share with others
 📜 License
-
----
-
-If you want, I can next:
-- 🔥 Add **architecture diagram (visual)**
-- 💎 Make it **even more premium with GIFs + animations**
-- 📊 Add **Databricks + Spark configs section (interview-focused)**
