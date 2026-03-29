@@ -36,7 +36,7 @@ Data Source → Ingestion Layer → Bronze Layer → Silver Layer → Gold Layer
 
 - 🐍 Python
 - ⚡ Apache Spark (Structured Streaming)
-- ☁️ Azure Data Lake / AWS S3
+- ☁️ Azure Data Lake
 - 📊 Databricks
 - 🧠 SQL
 - 📁 Delta Lake (optional enhancement)
