@@ -45,7 +45,6 @@ Data Source → Ingestion Layer → Bronze Layer → Silver Layer → Gold Layer
 
 ## 📂 Project Structure
 
-
 Uber_Data_RealTimeStreaming/
 │
 ├── Code_Files/
@@ -97,7 +96,7 @@ Uber_Data_RealTimeStreaming/
 
 ```bash
 # Clone the repository
-git clone https://github.com/your-username/Uber_Data_RealTimeStreaming.git
+git clone https://github.com/namansinghal111/Uber_Data_RealTImeStreaming.git
 
 # Navigate to project
 cd Uber_Data_RealTimeStreaming
