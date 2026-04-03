@@ -45,6 +45,8 @@ Data Source → Ingestion Layer → Bronze Layer → Silver Layer → Gold Layer
 
 ## 📂 Project Structure
 
+---
+
 Uber_Data_RealTimeStreaming/
 │
 ├── Code_Files/
@@ -62,6 +64,7 @@ Uber_Data_RealTimeStreaming/
 ├── .python-version
 └── README.md
 
+---
 
 ---
 
