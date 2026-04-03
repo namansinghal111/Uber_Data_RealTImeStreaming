@@ -19,81 +19,85 @@ The pipeline ingests streaming data, processes it through multiple transformatio
 
 ## 🏗️ Architecture
 
-
+```
 Data Source → Ingestion Layer → Bronze Layer → Silver Layer → Gold Layer → Analytics
-
+```
 
 ### 🔹 Key Components:
-- **Ingestion Layer**: Streaming data ingestion using Python
-- **Bronze Layer**: Raw data storage (unprocessed)
-- **Silver Layer**: Cleaned and transformed data
-- **Gold Layer**: Aggregated, business-ready data
-- **Processing Engine**: Apache Spark (Structured Streaming)
+
+* **Ingestion Layer**: Streaming data ingestion using Python
+* **Bronze Layer**: Raw data storage (unprocessed)
+* **Silver Layer**: Cleaned and transformed data
+* **Gold Layer**: Aggregated, business-ready data
+* **Processing Engine**: Apache Spark (Structured Streaming)
 
 ---
 
 ## ⚙️ Tech Stack
 
-- 🐍 Python
-- ⚡ Apache Spark (Structured Streaming)
-- ☁️ Azure Data Lake
-- 📊 Databricks
-- 🧠 SQL
-- 📁 Delta Lake (optional enhancement)
+* 🐍 Python
+* ⚡ Apache Spark (Structured Streaming)
+* ☁️ Azure Data Lake
+* 📊 Databricks
+* 🧠 SQL
+* 📁 Delta Lake (optional enhancement)
 
 ---
 
 ## 📂 Project Structure
 
----
-
+```
 Uber_Data_RealTimeStreaming/
 │
 ├── Code_Files/
-│ ├── ingest.py # Data ingestion script
-│ ├── bronze_adls.ipynb # Bronze layer processing
-│ ├── silver.py # Silver transformations
-│ ├── silver_obt.sql # SQL transformations
-│ ├── silver_obt.ipynb # Notebook transformations
-│ ├── model.py # Data modeling / logic
-│ └── readme.md # Internal documentation
+│   ├── ingest.py              # Data ingestion script
+│   ├── bronze_adls.ipynb      # Bronze layer processing
+│   ├── silver.py              # Silver transformations
+│   ├── silver_obt.sql         # SQL transformations
+│   ├── silver_obt.ipynb       # Notebook transformations
+│   ├── model.py               # Data modeling / logic
+│   └── readme.md              # Internal documentation
 │
-├── Data/ # Sample or input data
-├── templates/ # Config/templates
+├── Data/                      # Sample or input data
+├── templates/                 # Config/templates
 ├── .gitignore
 ├── .python-version
 └── README.md
-
----
+```
 
 ---
 
 ## 🔄 Data Pipeline Flow
 
 ### 1️⃣ Ingestion (`ingest.py`)
-- Reads real-time / batch data
-- Pushes raw data into Bronze layer
+
+* Reads real-time / batch data
+* Pushes raw data into Bronze layer
 
 ### 2️⃣ Bronze Layer
-- Stores raw, unprocessed data
-- Schema is loosely enforced
+
+* Stores raw, unprocessed data
+* Schema is loosely enforced
 
 ### 3️⃣ Silver Layer (`silver.py`, `silver_obt.sql`)
-- Data cleaning & transformation
-- Handles nulls, duplicates, schema enforcement
+
+* Data cleaning & transformation
+* Handles nulls, duplicates, schema enforcement
 
 ### 4️⃣ Gold Layer (Modeling)
-- Business-level aggregations
-- Ready for dashboards & analytics
+
+* Business-level aggregations
+* Ready for dashboards & analytics
 
 ---
 
 ## ▶️ How to Run
 
 ### ✅ Prerequisites
-- Python 3.9+
-- Apache Spark / Databricks
-- Cloud Storage (Azure / AWS)
+
+* Python 3.9+
+* Apache Spark / Databricks
+* Cloud Storage (Azure / AWS)
 
 ### 🔧 Steps
 
@@ -109,35 +113,59 @@ pip install -r requirements.txt
 
 # Run ingestion
 python Code_Files/ingest.py
-📊 Use Cases
-Real-time ride analytics 🚖
-Surge pricing insights 📈
-Driver & trip performance analysis
-Streaming ETL pipeline demo for interviews
-🌟 Features
-✅ Real-time data processing
-✅ Layered architecture (Bronze/Silver/Gold)
-✅ Scalable & cloud-ready
-✅ Modular code design
-✅ Supports both batch & streaming
-🚧 Future Improvements
-Add Kafka for real-time ingestion
-Implement Delta Lake optimizations
-Add Airflow for orchestration
-Dashboard integration (Power BI / Tableau)
-CI/CD pipeline setup
-👨‍💻 Author
+```
 
-Naman Singhal
+---
+
+## 📊 Use Cases
+
+* Real-time ride analytics 🚖
+* Surge pricing insights 📈
+* Driver & trip performance analysis
+* Streaming ETL pipeline demo for interviews
+
+---
+
+## 🌟 Features
+
+* ✅ Real-time data processing
+* ✅ Layered architecture (Bronze/Silver/Gold)
+* ✅ Scalable & cloud-ready
+* ✅ Modular code design
+* ✅ Supports both batch & streaming
+
+---
+
+## 🚧 Future Improvements
+
+* Add Kafka for real-time ingestion
+* Implement Delta Lake optimizations
+* Add Airflow for orchestration
+* Dashboard integration (Power BI / Tableau)
+* CI/CD pipeline setup
+
+---
+
+## 👨‍💻 Author
+
+**Naman Singhal**
 
 💼 Data Engineer | Cloud & AI Enthusiast
 ☁️ AWS | Azure | Databricks
 🤖 AI/ML & Real-Time Systems
-⭐ Support
+
+---
+
+## ⭐ Support
 
 If you like this project:
 
-⭐ Star the repo
-🍴 Fork it
-📢 Share with others
-📜 License
+* ⭐ Star the repo
+* 🍴 Fork it
+* 📢 Share with others
+
+---
+
+## 📜 License
+
+This project is licensed under the MIT License.
